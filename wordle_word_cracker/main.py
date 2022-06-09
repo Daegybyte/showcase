@@ -2,7 +2,7 @@ import datetime as dt
 import json
 
 # Load in wordle word list
-word_list = json.loads(open("words.json").read())
+word_list = json.loads(open("word_list.json").read())
 
 
 # returns the difference in days between two dates
