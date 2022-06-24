@@ -140,3 +140,6 @@ msdscript
 test_msdscript
 .a
 coinManagerComponentCode
+
+.yml
+.yaml
