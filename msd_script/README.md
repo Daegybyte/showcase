@@ -1,5 +1,5 @@
-#MSDSCRIPT Documentation
-#Licensing
+# MSDSCRIPT Documentation
+# Licensing
 MSDSCRIPT is offered free of charge. However, if you want to give Braden five dollars,
 his Venmo is: @Braden-Kirkham.
 
@@ -27,10 +27,10 @@ such as add, or multiply. For use of subtraction, please click
 [here](https://www.google.com/search?client=firefox-b-1-d&q=calculator). 
 For a paid version, click [here](https://smile.amazon.com/Casio-MS-80B-Standard-Function-Calculator/dp/B003822IRA/ref=sr_1_2?crid=3KV0W3ZQPTYBJ&keywords=calculator&qid=1649360013&sprefix=calculator%2Caps%2C132&sr=8-2).
 
-##So, you have decided to use MSDSCRIPT... 
+## So, you have decided to use MSDSCRIPT... 
 ...Are you sure?
 
-###Build process
+### Build process
 From the msdscript folder in the command line run:
 
 To create the library:
@@ -41,32 +41,32 @@ To create msdscript to then run it:
 
 `$ make`
 
-##The essentials:
+## The essentials:
 Msdscript is a command line based scripting language. To make use of it, 
 you must first open the command line.
 After you have used `make` to build msdscript on your machine,
 msdscript can be run with the following commandline arguments:
 
-###`$ ./msdscript --help`
+### `$ ./msdscript --help`
 * The `help` argument outputs a list of available command line inputs. 
 
-###`$ ./msdscript --test`
+### `$ ./msdscript --test`
 * The `test` argument runs the build of msdscript against of battery of tests 
 * that verify msdscript is operating properly.
 
-###`$ ./msdscript --print`
+### `$ ./msdscript --print`
 * The `print` argument outputs user input in a format specific to MSD script. 
 After passing the argument, the user can enter their expression, `2*2`, press
 `return` to create a new line, and finally `ctrl-d` to run msdscript. The user 
 can expect to see `(2*2)` in the next line of the command line.
 
-###`$ ./msdscript --interp`
+### `$ ./msdscript --interp`
 * The `interp` argument parses through a user input, and performs the necessary mathematical
 operations and then prints the answer. After passing the argument, the user can enter their expression,
 `2*2`, press `return` to create a new line, and finally `ctrl-d` to run msdscript. The user can expect to see `4D`
 in the next line of the command line.
 
-#MSDSCRIPT Grammar
+# MSDSCRIPT Grammar
 
 ```
 <expr>  = <number>
@@ -81,7 +81,7 @@ in the next line of the command line.
         | _fun ( <variable> ) <expr>
 ```
 
-#Semantics
+# Semantics
 In MSDSCRIPT, user input must follow the following specific formats:
 
 **Addition:**
@@ -177,7 +177,7 @@ _let fib = _fun (fib)
 _in  fib(fib)(30)
 ```
 
-#MSDSCRIPT API
+# MSDSCRIPT API
 
 MSDSCRIPT is useful for calculations. Using the appropriate grammar, specified above, you could write
 programs to calculate an outcome.
@@ -210,13 +210,13 @@ std::string output = parse_str(expr)->interp(Env::empty)->to_string();
 `c++ -o which_day which_day.cpp`
 
 `c++ -O2 -o which_day which_day.cpp libmsdscript.a`
-#Errors
+# Errors
 `consume mismatch` 
   * You should never get this error. If you receive a 'consume mismatch' error, something has gone horribly
   wrong inside msdscript. Please run the program again. If this does not fix it, please follow the instructions in
   the bug reporting section.
 
-##Limitations of MSDSCRIPT
+## Limitations of MSDSCRIPT
 * Floating point numbers
   * MSDSCRIPT currently does not offer support for floats or doubles. There is currently no plan to implement this in the future.
 * Division
@@ -224,8 +224,8 @@ std::string output = parse_str(expr)->interp(Env::empty)->to_string();
 * Functions can only take one parameter.
 * Using and underscore in a name is not allowed, because they are reserved for the parser.
 
-###Bug Reporting
+### Bug Reporting
 Please report all bugs to [@elonmusk](https://twitter.com/elonmusk/with_replies?lang=en) on Twitter.
 
-###Miscellaneous 
+### Miscellaneous 
 No animals were harmed in the making of this program.
