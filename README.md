@@ -15,3 +15,9 @@ A command line program in Python to manage the type and amount of coins player h
 
 ## Wordle
 This script draws on the word list of the New York Times game Wordle. It outputs the word of the day.
+
+## Search.bash
+
+A command line script to return specified search results from google in the 
+default web browser. Sites included in the search include but are not limited to: 
+Reddit, W3 Schools, Geeks For Geeks, Stack Overflow. 
