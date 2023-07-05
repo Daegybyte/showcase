@@ -136,10 +136,18 @@ fabric.properties
 # https://plugins.jetbrains.com/plugin/12206-codestream
 .idea/codestream.xml
 
+
 msdscript
 test_msdscript
 .a
-coinManagerComponentCode
-
-.yml
+.zip
 .yaml
+.yml
+
+*.yaml
+*.yml
+*.cache
+*.app
+**/dist/
+*/build/
+/build/

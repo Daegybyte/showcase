@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">MSD Lifestyle</string>
+
+    <string name="profile_picture">Profile Picture</string>
+    <string name="placeholder_username">Averyverylong Usersusername</string>
+    <string name="font_awesome_pen"></string>
+    <string name="bmr_lbl">BMR</string>
+    <string name="bmr_data">2000 kcal/day</string>
+    <string name="actlvl_lbl">Activity Level</string>
+    <string name="actlvl_data">Moderate</string>
+    <string name="actlvl_content_description">Change Activity Level Sedentary Mild Moderate Heavy Extreme</string>
+    <string name="btn_hikes">Hikes</string>
+    <string name="btn_weather">Weather</string>
+    <string name="profile_first_name">First Name</string>
+    <string name="profile_last_name">Last Name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="age">Age\n </string>
+    <string name="height">Height\n(cm)</string>
+    <string name="weight_n_kg">Weight\n(kg)</string>
+    <string name="sex">Sex</string>
+    <string name="radioMale">Male</string>
+    <string name="radioFemale">Female</string>
+    <string name="EtLocation">Click to get location -></string>
+    <string name="font_awesome_mapmarker">\uf3c5</string>
+    <string name="font_awesome_camera">\uf030</string>
+    <string name="btnSave">SAVE</string>
+    <string name="logo">Logo</string>
+    <string name="details">Details</string>
+    <string name="weather_loading">Loading...</string>
+    <string name="step_label_off">STEP COUNTER: off (swipe ON)</string>
+    <string name="step_label_on">STEP COUNTER: ON (swipe off)</string>
+    <string name="font_awesome_arrow_right">\uf101 \uf101</string>
+    <string name="font_awesome_arrow_left">\uf100 \uf100</string>
+    <string name="font_awesome_reset">\uf2f9</string>
+
+</resources>
+

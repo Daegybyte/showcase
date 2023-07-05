@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-msdapp2-dev-162413-authRole",
+      "UnauthRoleArn": "arn:aws:iam::360589933918:role/amplify-msdapp2-dev-162413-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::360589933918:role/amplify-msdapp2-dev-162413-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-msdapp2-dev-162413-deployment",
+      "UnauthRoleName": "amplify-msdapp2-dev-162413-unauthRole",
+      "StackName": "amplify-msdapp2-dev-162413",
+      "StackId": "arn:aws:cloudformation:us-west-2:360589933918:stack/amplify-msdapp2-dev-162413/16cfa5c0-5646-11ed-8ce3-0a92345f7029",
+      "AmplifyAppId": "d1yzlidgdhcpvq"
+    },
+    "categories": {
+      "auth": {
+        "msdapp281f1d47a": {}
+      },
+      "storage": {
+        "mrresource": {}
+      }
+    }
+  }
+}
