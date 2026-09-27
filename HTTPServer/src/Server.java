@@ -11,9 +11,8 @@ public class Server {
         while (true) {
             try {
                 Socket socket = myServerSocket.accept();
-                // Hand the connection off to a new thread instead of
-                // handling it right here. This lets the server accept
-                // the next connection immediately instead of waiting.
+
+                //hand this connection off to its own thread so we can go accept the next one right away
                 Thread clientThread = new Thread(() -> handleClient(socket));
                 clientThread.start();
             }
@@ -23,6 +22,7 @@ public class Server {
         }
     }
 
+    //handles one client's request/response, runs on its own thread
     private static void handleClient(Socket socket) {
         try {
             HTTPRequest request = new HTTPRequest();
@@ -32,6 +32,7 @@ public class Server {
             httpResponse.populateHttpResponse(request);
             httpResponse.sendToUser(httpResponse, socket);
         } catch (IOException e) {
+            //client probably disconnected or sent something weird, not the end of the world
             System.out.println("Error handling client: " + e.getMessage());
         }
     }
