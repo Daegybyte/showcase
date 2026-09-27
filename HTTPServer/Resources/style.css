@@ -1,0 +1,10 @@
+.centerText{
+    text-align: center;
+    border: red 1px solid;
+}
+a:hover{
+    color:deeppink;
+    transition: 9s;
+}
+
+
